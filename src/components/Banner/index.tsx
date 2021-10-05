@@ -1,25 +1,10 @@
-import { Flex, Text, Image, Box, Stack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
+import Content from "./Content";
 
 export default function Banner() {
   return (
     <Flex w="100vw" h="96" bgImage="url('/banner.jpg')" bgPosition="100% 32%">
-      <Flex w="100%" maxWidth={1120} mx="auto" align="center" justify="space-between">
-        <Stack spacing="5">
-          <Text fontSize="4xl" fontWeight="500" color="gray.150">
-            5 Continentes,
-            <br />
-            Infinitas possibilidades.
-          </Text>
-
-          <Text fontSize="xl" color="gray.250" maxW={550}>
-            Chegou a hora de tirar do papel a viagem que você sempre sonhou.
-          </Text>
-        </Stack>
-
-        <Box>
-          <Image src="/airplane.svg" alt="Avião nas nuvens" transform="translateY(72px)" />
-        </Box>
-      </Flex>
+      <Content />
     </Flex>
   );
 }
