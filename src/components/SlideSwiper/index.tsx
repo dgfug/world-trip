@@ -6,7 +6,7 @@ SwiperCore.use([Keyboard, Pagination, Navigation]);
 
 export default function SlideSwiper() {
   return (
-    <Flex maxWidth={1120} mx="auto" mt="14" mb="20">
+    <Flex maxWidth={1120} mx="auto" mt="14" mb="10">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
