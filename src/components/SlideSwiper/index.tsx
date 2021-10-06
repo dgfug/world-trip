@@ -1,10 +1,6 @@
-import { Flex, Text, Center } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Keyboard, Pagination, Navigation } from "swiper";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 SwiperCore.use([Keyboard, Pagination, Navigation]);
 
@@ -14,6 +10,7 @@ export default function SlideSwiper() {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
+        className="slideSwiper"
         keyboard={{
           enabled: true,
         }}
@@ -21,7 +18,6 @@ export default function SlideSwiper() {
           clickable: true,
         }}
         navigation={true}
-        className="mySwiper"
       >
         <SwiperSlide>
           <Flex
@@ -41,6 +37,7 @@ export default function SlideSwiper() {
             </Text>
           </Flex>
         </SwiperSlide>
+
         <SwiperSlide>
           <Flex
             h="450px"
@@ -49,8 +46,14 @@ export default function SlideSwiper() {
             bgPosition="center"
             align="center"
             justify="center"
+            direction="column"
           >
-            <Text>Teste</Text>
+            <Text fontSize="5xl" fontWeight="700" color="gray.150">
+              Europa
+            </Text>
+            <Text fontSize="2xl" fontWeight="700" color="gray.250" mt="4">
+              O continente mais antigo.
+            </Text>
           </Flex>
         </SwiperSlide>
       </Swiper>
