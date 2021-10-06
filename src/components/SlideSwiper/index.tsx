@@ -6,7 +6,14 @@ SwiperCore.use([Keyboard, Pagination, Navigation]);
 
 export default function SlideSwiper() {
   return (
-    <Flex maxWidth={1120} mx="auto" mt="14" mb="10">
+    <Flex
+      maxWidth={1120}
+      w="100%"
+      h={["250px", "450px"]}
+      mx="auto"
+      mt={["5", "14"]}
+      mb={["6", "10"]}
+    >
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -21,7 +28,8 @@ export default function SlideSwiper() {
       >
         <SwiperSlide>
           <Flex
-            h="450px"
+            w="100%"
+            h={["250px", "450px"]}
             bgImage="url('/images/europe/banner.jpg')"
             bgSize="cover"
             bgPosition="center"
@@ -29,10 +37,10 @@ export default function SlideSwiper() {
             justify="center"
             direction="column"
           >
-            <Text fontSize="5xl" fontWeight="700" color="gray.150">
+            <Text fontSize={["2xl", "5xl"]} fontWeight="700" color="gray.150">
               Europa
             </Text>
-            <Text fontSize="2xl" fontWeight="700" color="gray.250" mt="4">
+            <Text fontSize={["sm", "2xl"]} fontWeight="700" color="gray.250" mt="4">
               O continente mais antigo.
             </Text>
           </Flex>
@@ -40,7 +48,8 @@ export default function SlideSwiper() {
 
         <SwiperSlide>
           <Flex
-            h="450px"
+            w="100%"
+            h={["250px", "450px"]}
             bgImage="url('/images/europe/banner.jpg')"
             bgSize="cover"
             bgPosition="center"
@@ -48,10 +57,10 @@ export default function SlideSwiper() {
             justify="center"
             direction="column"
           >
-            <Text fontSize="5xl" fontWeight="700" color="gray.150">
+            <Text fontSize={["2xl", "5xl"]} fontWeight="700" color="gray.150">
               Europa
             </Text>
-            <Text fontSize="2xl" fontWeight="700" color="gray.250" mt="4">
+            <Text fontSize={["sm", "2xl"]} fontWeight="700" color="gray.250" mt="4">
               O continente mais antigo.
             </Text>
           </Flex>

@@ -14,7 +14,7 @@ export default function TravelTypes() {
       mx="auto"
       pl={["12", "0"]}
       pr={["12", "0"]}
-      mt={["9", "20"]}
+      mt={["2", "20"]}
       mb={["9", "20"]}
       flexWrap="wrap"
     >
