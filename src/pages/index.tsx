@@ -14,10 +14,10 @@ export default function Home() {
 
       <Center flexDirection="column">
         <Divider />
-        <Text mt="14" fontSize="4xl" fontWeight="500" color="gray.450">
+        <Text mt={["6", "14"]} fontSize={["xl", "4xl"]} fontWeight="500" color="gray.450">
           Vamos Nessa?
         </Text>
-        <Text fontSize="4xl" fontWeight="500" color="gray.450">
+        <Text fontSize={["xl", "4xl"]} fontWeight="500" color="gray.450">
           Então escolha seu continente
         </Text>
       </Center>
